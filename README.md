@@ -320,7 +320,7 @@ submission.to_csv('submission_deberta.csv', index=False)
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>In this project, we built a text classification model to distinguish between disaster-related and non-disaster tweets. By leveraging a pretrained DeBERTa model and performing thorough text preprocessing inspired by the Kaggle community, we aimed to improve the model's ability to understand and classify the nuances in the tweets.</p>
+<p>In this project, I built a text classification model to distinguish between disaster-related and non-disaster tweets. By leveraging a pretrained DeBERTa model and performing thorough text preprocessing inspired by the Kaggle community, I aimed to improve the model's ability to understand and classify the nuances in the tweets.</p>
 
 <p><strong>Next Steps:</strong></p>
 
@@ -332,7 +332,7 @@ submission.to_csv('submission_deberta.csv', index=False)
 
 <h2 id="acknowledgments">Acknowledgments</h2>
 
-<p>We would like to thank the Kaggle community members whose work inspired parts of this project:</p>
+<p>I would like to thank the Kaggle community members whose work inspired parts of this project:</p>
 
 <ul>
   <li><a href="https://www.kaggle.com/code/wrrosa/keras-bert-using-tfhub-modified-train-data#About-this-kernel">wrrosa's notebook on Keras BERT using TFHub</a> for insights on correcting target errors.</li>
