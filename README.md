@@ -2,6 +2,8 @@
 
 <p>This project is a solution to the Kaggle competition <a href="https://www.kaggle.com/competitions/nlp-getting-started">Natural Language Processing with Disaster Tweets</a>. The goal is to build a machine learning model that can predict whether a given tweet is about a real disaster (<code>1</code>) or not (<code>0</code>).</p>
 
+![image](https://github.com/user-attachments/assets/464aa37e-9eb3-4516-b645-56692d5de38d)
+
 <h2>Table of Contents</h2>
 
 <ul>
