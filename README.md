@@ -2,7 +2,16 @@
 
 <p>This project is a solution to the Kaggle competition <a href="https://www.kaggle.com/competitions/nlp-getting-started">Natural Language Processing with Disaster Tweets</a>. The goal is to build a machine learning model that can predict whether a given tweet is about a real disaster (<code>1</code>) or not (<code>0</code>).</p>
 
-![image](https://github.com/user-attachments/assets/464aa37e-9eb3-4516-b645-56692d5de38d)
+<img src="https://github.com/user-attachments/assets/464aa37e-9eb3-4516-b645-56692d5de38d" alt="Disaster Tweets Image" />
+
+<h2>File Explanations</h2>
+
+<ul>
+  <li><strong>main.ipynb</strong>: The main Jupyter Notebook containing all the code for data preprocessing, model training, evaluation, and prediction.</li>
+  <li><strong>train.csv</strong>: The training dataset provided by Kaggle, which includes labeled tweets (tweets and their corresponding labels indicating whether they are about a real disaster).</li>
+  <li><strong>test.csv</strong>: The test dataset provided by Kaggle, containing unlabeled tweets that we need to classify.</li>
+  <li><strong>sample_submission.csv</strong>: A sample submission file provided by Kaggle, showing the required format for submitting predictions.</li>
+</ul>
 
 <h2>Table of Contents</h2>
 
@@ -80,7 +89,7 @@ train.loc[train['Unnamed: 0'].isin(ids_with_target_error), 'target'] = 0
 
 <h3 id="text-cleaning">Text Cleaning</h3>
 
-<p>We perform several preprocessing steps ("Remove Emojis" is inspired by <a href="https://www.kaggle.com/code/vbmokin/nlp-eda-bag-of-words-tf-idf-glove-bert#5.-Data-Cleaning-">vbmokin's Kaggle notebook)</a>:</p>
+<p>We perform several preprocessing steps (the "Remove Emojis" step is inspired by <a href="https://www.kaggle.com/code/vbmokin/nlp-eda-bag-of-words-tf-idf-glove-bert#5.-Data-Cleaning-">vbmokin's Kaggle notebook</a>):</p>
 
 <ul>
   <li><strong>Remove Emojis</strong>: Using regex patterns.</li>
@@ -156,8 +165,7 @@ abbreviations = {
 
 <p>We apply preprocessing to the relevant columns:</p>
 
-<pre><code>
-columns_to_preprocess = ['text', 'keyword', 'location']
+<pre><code>columns_to_preprocess = ['text', 'keyword', 'location']
 for column in columns_to_preprocess:
     train[column] = train[column].fillna('Missing')
     test[column] = test[column].fillna('Missing')
@@ -320,7 +328,7 @@ submission.to_csv('submission_deberta.csv', index=False)
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>In this project, I built a text classification model to distinguish between disaster-related and non-disaster tweets. By leveraging a pretrained DeBERTa model and performing thorough text preprocessing inspired by the Kaggle community, I aimed to improve the model's ability to understand and classify the nuances in the tweets.</p>
+<p>In this project, we built a text classification model to distinguish between disaster-related and non-disaster tweets. By leveraging a pretrained DeBERTa model and performing thorough text preprocessing inspired by the Kaggle community, we aimed to improve the model's ability to understand and classify the nuances in the tweets.</p>
 
 <p><strong>Next Steps:</strong></p>
 
@@ -332,7 +340,7 @@ submission.to_csv('submission_deberta.csv', index=False)
 
 <h2 id="acknowledgments">Acknowledgments</h2>
 
-<p>I would like to thank the Kaggle community members whose work inspired parts of this project:</p>
+<p>We would like to thank the Kaggle community members whose work inspired parts of this project:</p>
 
 <ul>
   <li><a href="https://www.kaggle.com/code/wrrosa/keras-bert-using-tfhub-modified-train-data#About-this-kernel">wrrosa's notebook on Keras BERT using TFHub</a> for insights on correcting target errors.</li>
