@@ -10,7 +10,6 @@
   <li><strong>main.ipynb</strong>: The main Jupyter Notebook containing all the code for data preprocessing, model training, evaluation, and prediction.</li>
   <li><strong>train.csv</strong>: The training dataset provided by Kaggle, which includes labeled tweets (tweets and their corresponding labels indicating whether they are about a real disaster).</li>
   <li><strong>test.csv</strong>: The test dataset provided by Kaggle, containing unlabeled tweets that we need to classify.</li>
-  <li><strong>sample_submission.csv</strong>: A sample submission file provided by Kaggle, showing the required format for submitting predictions.</li>
 </ul>
 
 <h2>Table of Contents</h2>
